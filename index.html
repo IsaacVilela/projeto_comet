@@ -1,0 +1,248 @@
+    <!doctype html>
+    <html lang="en">
+          <head>
+            <meta charset="utf-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+            <script src="https://kit.fontawesome.com/4b468af18c.js" crossorigin="anonymous"></script>
+              
+            <script src="https://github.com/igorescobar/jQuery-Mask-Plugin/blob/master/dist/jquery.mask.min.js"></script>
+              
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+              
+            <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+              
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+              
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+              
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $("input").blur(function(){
+                    if($(this).val() == "")
+                        {
+                            $(this).css({"border" : "2px solid #F00", "padding": "2px"});
+                        }
+                    });
+                    $("#botao").click(function(){
+                    var cont = 0;
+                    $("#form input").each(function(){
+                    if($(this).val() == "")
+                        {
+                            $(this).css({"border" : "1px solid #F00", "padding": "2px"});
+                            cont++;
+                        }
+                    });
+                    if(cont == 0)
+                        {
+                            $("#form").submit();
+                        }
+                    });
+                });
+            </script>
+              
+
+            <title>Comet | Isaac Vilela</title>
+          </head>
+          <body>
+              <div class="container">
+              <!-- Menu -->
+              <div class="row" id="navbar">
+                <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark p3">
+                    <a class="navbar-brand" href="#"><img src="img/comet-logo.png" width="30" height="30"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                </nav>
+            </div>
+            
+              <!-- Slide -->
+              <div class="row" id="slide">      
+                <div id="demo" class="carousel slide" data-ride="carousel">
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/sld1.png" alt="COMET">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/sld2.png" alt="Chicago">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/sld3.png" alt="New York">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+              
+              <!-- Sobre -->
+              <section class="about p-60-0-60">
+                <div class="row" id="about">
+                    <div class="col-sm align-self-center text-center">
+                        <img class="50%" src="img/uni.png">
+                    </div>
+                    <div class="col-sm">
+                        <div class="thin">
+                            <h2 class="mb-30 mx-auto">Alcance outras galáxias com nossa agência!</h2>
+                            <p>Somos uma agência em movimento. Acreditamos em um constante estado de excitabilidade sensorial, porque através dele alcançamos o novo. Pensar fora da caixa não basta. É preciso sair da caixa. </p>
+                            <p>O propósito da COMET é ser o parceiro ideal do seu Negócio. Oferecendo recursos e estratégias que aproximam a sua marca do seu Público Alvo. Antecipar movimentos e oferecer soluções criativas de excelência, em uma constante mediação de resultados. </p>
+                            <p>Pesquisa; Brainstorm; Mensagens Relevantes; Estratégia de Conteúdo e Campanhas Integradas. Somos especialistas em performances multiplataforma.</p>
+                            <p>Em outras palavras, somos um bando de jovens nerds, apaixonados por conteúdo, cultura e processos criativos. Se você precisa de ideias ousadas e ações mirabolantes para impulsionar o seu Negócio, vem com a gente! CONSTRUIR | PUBLICAR | CONECTAR – esta é a nossa cultura.</p>
+                        </div>
+                    </div>
+                </div>
+              </section>
+
+              <!-- contato -->
+              <form class="needs-validation" novalidate id="contact" method="post">
+                <h2>Fale com a gente!</h2>
+                <div class="form-row" >
+                    <div class="form-group col-md-6">
+                        <label for="name">Nome: </label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Nome" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Telefone: </label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-mobile-alt"></i></span>
+                            </div>
+                            
+                            <input type="tel"  maxlength="11" onkeyup="msk_phone()" class="form-control phone_with_ddd" id="phone" placeholder="Telefone" aria-describedby="inputGroupPrepend" required>
+                            
+                            <script>
+                                $("#phone").mask("(99) 99999-9999");
+                            </script>
+                            
+                            
+                            <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="mail">Email: </label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-at"></i></span>
+                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="assunto">Assunto: </label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-comment"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Assunto" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="name">Mensagem: </label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend"><i class="far fa-sticky-note"></i></span>
+                            </div>
+                            <textarea type="text" class="form-control" id="Mensagem" placeholder="Mensagem" aria-describedby="inputGroupPrepend" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor, escolha um nome de usuário.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12 text-center">
+                        <button type="button" id="btn_send" value="enviar" class="btn btn-success">Enviar</button>
+                </div>
+            </form>
+
+              <!-- Footer -->
+                  <footer class="page-footer font-small special-color-dark pt-4" id="footer">
+
+                  <div class="container">
+
+                    <ul class="list-unstyled list-inline text-center">
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/isaacrvilela">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1" href="https://twitter.com/isaac_huahua">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="btn-floating btn-li mx-1" href="http://www.linkedin.com/in/isaacrodrigues">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <div class=" text-center py-3">© 2020 |
+                    <a href="https://about.me/isaacvilela/">Isaac Vilela</a>
+                  </div>
+                  </footer>
+                </div>
+
+
+              <!-- scripts -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+              
+          </body>
+    </html>

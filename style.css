@@ -1,0 +1,52 @@
+h2 {
+    color: darkred;
+}
+
+.nav-item {
+    padding-right: 25px;
+}
+
+.carousel-inner img{
+    width: 100%;
+}
+
+#slide {
+    padding-top: 70px;
+}
+
+.about {
+    align-content: center;
+}
+
+#about {
+    padding-top: 5%
+}
+
+#about img {
+    width: 70%;
+    align-content: center;
+}
+
+#contact {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+footer {
+    border-top: 2px solid #c0c0c0;
+}
+
+a {
+    color: darkred;
+}
+
+#btn_mario {
+    border: none;
+    color: darkred;
+    background: none;
+}
+
+#btn_send {
+    width: 50%;
+}
+
